@@ -25228,9 +25228,15 @@ filegroup {
     ],
 }
 
-filegroup {
+// PenService.apk is larger than the GitHub file limit, so it is stored in
+// parts (split -b 95M -d -a 2) and joined back here.
+genrule {
     name: "PenService-stock",
     srcs: [
-        "proprietary/system_ext/priv-app/PenService/PenService.apk",
+        "proprietary/system_ext/priv-app/PenService/PenService.apk.part00",
+        "proprietary/system_ext/priv-app/PenService/PenService.apk.part01",
+        "proprietary/system_ext/priv-app/PenService/PenService.apk.part02",
     ],
+    out: ["PenService.apk"],
+    cmd: "cat $(in) > $(out)",
 }
