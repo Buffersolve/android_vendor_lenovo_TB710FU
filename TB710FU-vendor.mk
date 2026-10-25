@@ -661,6 +661,30 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/AC16.0.0.7_ID1_speaker-mic_recording.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/AC16.0.0.7_ID1_speaker-mic_recording.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/AC16.0.0.7_ID2_speaker-mic_video.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/AC16.0.0.7_ID2_speaker-mic_video.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/AC16.0.0.7_ID3_headset-mic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/AC16.0.0.7_ID3_headset-mic.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/AC16.0.0.7_ID4_usb-headset-mic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/AC16.0.0.7_ID4_usb-headset-mic.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/AC16.0.0.7_ID5_bt-sco-mic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/AC16.0.0.7_ID5_bt-sco-mic.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/AC16.dat:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/AC16.dat \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/LVACFS_Configuration.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/audiozoom_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/audiozoom_1.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/audiozoom_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/audiozoom_2.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/audiozoom_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/audiozoom_3.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/audiozoom_4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/audiozoom_4.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/1mic/audiozoom_5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/1mic/audiozoom_5.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/AC16.0.0.7_ID1_speaker-mic_recording.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/AC16.0.0.7_ID1_speaker-mic_recording.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/AC16.0.0.7_ID2_speaker-mic_video.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/AC16.0.0.7_ID2_speaker-mic_video.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/AC16.0.0.7_ID3_headset-mic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/AC16.0.0.7_ID3_headset-mic.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/AC16.0.0.7_ID4_usb-headset-mic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/AC16.0.0.7_ID4_usb-headset-mic.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/AC16.0.0.7_ID5_bt-sco-mic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/AC16.0.0.7_ID5_bt-sco-mic.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/AC16.dat:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/AC16.dat \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/audiozoom_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/audiozoom_1.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/audiozoom_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/audiozoom_2.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/audiozoom_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/audiozoom_3.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/audiozoom_4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/audiozoom_4.txt \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/lvacfs_params/2mic/audiozoom_5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/2mic/audiozoom_5.txt \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/media_cliffs_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_cliffs_v0/video_system_specs.json \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/media_cliffs_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_cliffs_v1/video_system_specs.json \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
