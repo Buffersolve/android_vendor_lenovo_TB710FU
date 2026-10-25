@@ -593,6 +593,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
@@ -601,7 +602,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.qti.graphics.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.graphics.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.spdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.spdaemon.rc \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.spuservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.spuservice.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.vendor.qti.spu@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.spu@1.1-service.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
@@ -731,6 +736,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
+    vendor/lenovo/TB710FU/proprietary/vendor/etc/permissions/sku_pineapple/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_pineapple/android.hardware.strongbox_keystore.xml \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/lenovo/TB710FU/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -980,30 +986,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/bitmlconfig_sm8635.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig_sm8635.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxfl115indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl115indices.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxfl300v1indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v1indices.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxfl300v2indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v2indices.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxflcustom300indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxflcustom300indices.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.kc_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.kc_gc02m1.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.lce_gc13a2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lce_gc13a2.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_ov13b10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_ov13b10.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_ov13b10_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_ov13b10_2.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_gc02m1.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_gc13a2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_gc13a2.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_ov13b10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_ov13b10.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_ov13b10_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_ov13b10_2.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.tpg.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.tpg.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_kc_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_kc_gc02m1_macro.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_lce_gc13a2_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_lce_gc13a2_front.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_qtech_ov13b10_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_qtech_ov13b10_main.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_gc02m1_macro.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_gc13a2_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_gc13a2_front.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_ov13b10_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_ov13b10_main.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/imx688_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_4.pb \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/imx688_6.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_6.pb \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b68v04s12n52.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b68v04s12n52.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b68v04s12n53.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b68v04s12n53.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n02.bin \
@@ -1104,14 +1086,39 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n60.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n60.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n61.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n61.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n62.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n62.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/bitmlconfig_sm8635.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig_sm8635.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxfl115indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl115indices.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxfl300v1indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v1indices.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxfl300v2indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v2indices.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/camxflcustom300indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxflcustom300indices.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.kc_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.kc_gc02m1.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.lce_gc13a2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lce_gc13a2.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_ov13b10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_ov13b10.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_ov13b10_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_ov13b10_2.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_gc02m1.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_gc13a2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_gc13a2.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_ov13b10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_ov13b10.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_ov13b10_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_ov13b10_2.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_kc_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_kc_gc02m1_macro.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_lce_gc13a2_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_lce_gc13a2_front.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_qtech_ov13b10_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_qtech_ov13b10_main.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_gc02m1_macro.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_gc13a2_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_gc13a2_front.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_ov13b10_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_ov13b10_main.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.tpg.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.tpg.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigsecure.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
-    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/imx688_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_4.pb \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/imx688_6.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_6.pb
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
+    android.hardware.security.sharedsecret-V2-ndk_spu \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.gt24p128e2csli_s5kjn1 \
@@ -1646,6 +1653,9 @@ PRODUCT_PACKAGES += \
     libspectre \
     libspl \
     libsplh \
+    libspukeymint \
+    libspukeymintdeviceutils \
+    libspukeymintutils \
     libsrc_jni_getPasrService \
     libssc_default_listener \
     libssd \
@@ -1758,6 +1768,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
+    vendor.qti.hardware.spu-V2-ndk \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -1779,6 +1790,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
     vendor.qti.qspmhal@1.0 \
+    vendor.qti.spu@1.0 \
+    vendor.qti.spu@1.1 \
+    vendor.qti.spu@2.0 \
     vendor.qti.voiceprint@1.0 \
     vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
     vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
@@ -1861,6 +1875,7 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service-qti \
     android.hardware.power-service \
     android.hardware.security.keymint-service-qti \
+    android.hardware.security.keymint-service-spu-qti \
     pasrknob \
     qconfigservice \
     vendor.dolby.hardware.dms@2.0-service \
@@ -1881,9 +1896,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.servicetrackeraidl-service \
+    vendor.qti.hardware.spu-service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.psiclient@1.0-service \
+    vendor.qti.spu@1.1-service \
+    vendor.qti.spu@2.0-service \
     irsc_util \
     loadalgo \
     mmid \
@@ -1907,7 +1925,9 @@ PRODUCT_PACKAGES += \
     qsap_voiceui \
     qseecomd \
     qwesd \
+    sec_nvm \
     sensors.qti \
+    spdaemon \
     sscrpcd \
     ssgqmigd \
     ssgtzd \
